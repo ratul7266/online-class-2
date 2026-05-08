@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Form Tag</h1>
+    </header>
+    <main>
+      <form action="">
+        <!--Name-->
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your Name"
+          required
+          value="MD Ratul"
+        />
+
+        <br /><br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter Your Email " required />
+        <br /><br />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <br /><br />
+
+        <label for="deparment">Department</label>
+        <input type="radio" id="cst" name="deparment" value="cst" />
+        <label for="cst">CST</label>
+        <input type="radio" id="eee" name="deparment" value="eee" />
+        <label for="eee">EEE</label>
+
+        <!--
+            1.id
+            2.value
+            3.name
+            4.for
+            -->
+        <br /><br />
+        <label for="district">District</label>
+        <br />
+        <select name="district" id="district">
+          <option value="">Select</option>
+          <option value="dhaka">Dhaka</option>
+          <option value="">Patuakhali</option>
+          <option value="">Gazipur</option>
+          <option value="">Barishal</option>
+        </select>
+
+        <br /><br />
+        <label for="message">Massage</label>
+        <br />
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
